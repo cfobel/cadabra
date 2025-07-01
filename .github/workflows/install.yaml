@@ -1,0 +1,23 @@
+# SPDX-License-Identifier: Apache-2.0
+name: install
+on: [push, pull_request]
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'pnpm'
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - uses: prefix-dev/setup-pixi@v0.8.10
+      - name: Install Python deps
+        run: pixi install
+      - name: Install frontend deps
+        run: |
+          cd frontend
+          pnpm install
