@@ -5,9 +5,16 @@ from pathlib import Path
 
 MISSING = []
 for fname in sys.argv[1:]:
-    if Path(fname).suffix == ".json":
+    path = Path(fname)
+    if path.name == "LICENSE":
         continue
-    text = Path(fname).read_text(errors="ignore")
+    if (
+        path.suffix == ".json"
+        or path.suffix == ".yaml"
+        and path.name.endswith("-lock.yaml")
+    ):
+        continue
+    text = path.read_text(errors="ignore")
     lines = text.splitlines()[:5]
     if not any("SPDX-License-Identifier: Apache-2.0" in ln for ln in lines):
         MISSING.append(fname)
