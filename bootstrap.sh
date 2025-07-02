@@ -3,4 +3,4 @@
 set -euo pipefail
 
 pixi init --format pyproject
-(cd frontend && pnpm init)
+(cd frontend && pnpm init --yes)

@@ -14,6 +14,7 @@ jobs:
         with:
           node-version: '18'
           cache: 'pnpm'
+          cache-dependency-path: frontend/pnpm-lock.yaml
       - uses: prefix-dev/setup-pixi@v0.8.10
       - name: Install Python deps
         run: pixi install
