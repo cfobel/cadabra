@@ -24,6 +24,8 @@ isort = ">=6.0.1,<7"
 ipykernel = ">=6.29.5,<7"
 pytest = ">=8.4.1,<9"
 nodejs = ">=22.13.0,<22.14"
+pre-commit = ">=4.2.0,<5"
+markdownlint-cli2 = ">=0.18.1,<0.19"
 
 [tool.black]
 line-length = 88
