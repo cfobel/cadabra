@@ -1,0 +1,25 @@
+# SPDX-License-Identifier: Apache-2.0
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.eggs
+*.egg-info/
+# Pixi
+.pixi/
+
+# Node
+node_modules/
+dist/
+
+# Environment
+.env
+
+# Others
+.DS_Store
+
+
+
+# pixi environments
+.pixi
+*.egg-info

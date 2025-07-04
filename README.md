@@ -1,3 +1,4 @@
+<!-- SPDX-License-Identifier: Apache-2.0 -->
 # cadabra
 
 Turn a photo of any gadget into a tailor-fit organiser tray — all in the browser.

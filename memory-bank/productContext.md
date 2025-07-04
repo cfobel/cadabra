@@ -1,6 +1,7 @@
 # Product Context
 
 ## Why it exists
+
 Enthusiasts who own 3-D printers or CNC cutters often need **bespoke trays, inlays
 or organisers** that match the silhouette of real-world objects. Traditional CAD
 packages (Fusion 360, SolidWorks) demand expertise and paid licences, while AI tools
@@ -8,6 +9,7 @@ usually return *uneditable meshes*. Our application, **cadabra**, bridges that g
 **parametric CAD** (see [`projectbrief.md`](./projectbrief.md)) that users (or AI agents) can re-edit later.
 
 ## Problems solved
+
 1. **Ease-of-use** – Drag-and-drop photo → tweak a few sliders → download model.
 2. **Editability** – Output is STEP/STL generated from a [`CadQuery` script](./techContext.md), not a frozen
    mesh.
@@ -17,6 +19,7 @@ usually return *uneditable meshes*. Our application, **cadabra**, bridges that g
    without restriction.
 
 ## UX Goals
+
 * < 60 s from photo upload to downloadable model.
 * No local installation; works on desktop & mobile.
 * Live preview updating within 250 ms of parameter change.
