@@ -23,8 +23,8 @@ Each phase ends in a demo-able increment; every sub-task is scoped so a junior e
 
 | ID  | Deliverable                     | Sub-tasks                                                                                                          |
 | --- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| 1-1 | **FastAPI app booting locally** | ① `backend/main.py` with `create_app()` and `/health` route<br>② Uvicorn entry-point<br>③ PyTest health-check test |
-| 1-2 | **Domain package layout**       | Create `backend/cadabra/` with `api/`, `services/`, `models/` packages                                             |
+| 1-1 | **FastAPI app booting locally** | ① `backend/src/cadabra/main.py` with `create_app()` and `/health` route<br>② Uvicorn entry-point<br>③ PyTest health-check test |
+| 1-2 | **Domain package layout**       | Create `backend/src/cadabra/` with `api/`, `services/`, `models/` packages                                             |
 | 1-3 | **Background task stub**        | Implement FastAPI `BackgroundTasks` handler for “build\_tray” that just writes a placeholder STL file              |
 | 1-4 | **Pydantic DTOs**               | Define `TrayRequest`, `TrayStatus`, `TrayDownload` schemas                                                         |
 | 1-5 | **OpenAPI docs auto-generated** | Enable tags, description from Memory Bank text                                                                     |

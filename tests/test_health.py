@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: Apache-2.0
 from fastapi.testclient import TestClient
 
-from backend.main import create_app
+from cadabra.main import create_app
 
 
 def test_health() -> None:

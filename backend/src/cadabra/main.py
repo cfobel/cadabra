@@ -5,11 +5,11 @@ from pathlib import Path
 
 from fastapi import FastAPI
 
-from .cadabra.api import trays
+from .api import trays
 
 
 def load_description() -> str:
-    root = Path(__file__).resolve().parents[1]
+    root = Path(__file__).resolve().parents[3]
     path = root / "memory-bank" / "projectbrief.md"
     return path.read_text()
 
