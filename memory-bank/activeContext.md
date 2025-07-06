@@ -1,13 +1,12 @@
-# Active Context (01 Jul 2025)
+# Active Context (06 Jul 2025)
 
-* **Focus** – Kick-off: initialise Memory Bank; agree on slug; scaffold repo.
+* **Focus** – Backend skeleton complete; start Docker and frontend scaffolding.
 * **Immediate next steps** (see [`techContext.md`](./techContext.md) for stack details)
 
-  1. Pick and register project slug (`cadabra`).
-  2. `pixi init --format pyproject` → add FastAPI, CadQuery, pytest.
-  3. `pnpm init` → add React, Vite, TypeScript, ESLint, Prettier.
-  4. Create multi-stage Dockerfile using `mambaorg/pixi` base.
-  5. Set up GitHub Actions (lint, test, docker-build, licence check).
+  1. Create multi-stage Dockerfile using `mambaorg/pixi` base.
+  2. Add docker-compose for local dev.
+  3. Scaffold React frontend with Vite + TypeScript.
+  4. Extend GitHub Actions to build and push Docker images.
 
 * **Decisions** (see [`systemPatterns.md`](./systemPatterns.md) for full rationale)
 
