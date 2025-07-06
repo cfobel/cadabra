@@ -5,7 +5,7 @@
 | ------------ | ----------------------------------------------------- | ------------- |
 | 2025-07-01   | Memory Bank initialised with core files & [C4 diagrams](./systemPatterns.md) | ✅             |
 | 2025-07-01   | Repository scaffolding                                | ✅ |
-| –            | Frontend skeleton (React)                             | ⏳             |
+| 2025-07-06   | Frontend skeleton (React)                             | ✅        |
 | 2025-07-05   | FastAPI skeleton + health check                       | ✅        |
 | 2025-07-06   | Backend skeleton with trays API and CI workflow       | ✅   |
 | –            | Docker & CI pipeline                                  | ⏳             |
