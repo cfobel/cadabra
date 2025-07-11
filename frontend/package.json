@@ -8,8 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint src --ext .js,.jsx,.ts,.tsx --fix",
-    "format": "prettier --check src"
-
+    "format": "prettier --write src"
   },
   "keywords": [],
   "author": "",
