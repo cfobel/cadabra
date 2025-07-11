@@ -1,4 +1,3 @@
-# SPDX-License-Identifier: Apache-2.0
 version: 6
 environments:
   default:
@@ -10,6 +9,7 @@ environments:
       linux-64:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/_libgcc_mutex-0.1-conda_forge.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/linux-64/_openmp_mutex-4.5-2_gnu.tar.bz2
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/act-0.2.79-ha8f183a_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/anyio-4.9.0-pyh29332c3_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/asttokens-3.0.0-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/black-25.1.0-pyh866005b_0.conda
@@ -139,6 +139,14 @@ packages:
   purls: []
   size: 23621
   timestamp: 1650670423406
+- conda: https://conda.anaconda.org/conda-forge/linux-64/act-0.2.79-ha8f183a_0.conda
+  sha256: 09503daa9a0659c53480f9fe11052f4f9ad163795d932956451e0d85901f4aa2
+  md5: 4bc2a6e498efbe20b36bf5b8195822f7
+  license: MIT
+  license_family: MIT
+  purls: []
+  size: 14271248
+  timestamp: 1751371670369
 - pypi: https://files.pythonhosted.org/packages/78/b6/6307fbef88d9b5ee7421e68d78a9f162e0da4900bc5f5793f6d3d0e34fb8/annotated_types-0.7.0-py3-none-any.whl
   name: annotated-types
   version: 0.7.0
@@ -217,7 +225,7 @@ packages:
 - pypi: ./
   name: cadabra
   version: 0.1.0
-  sha256: 0535733848ac24019118aa584f7a566be614b8a31bc564127f0385ba124d22e8
+  sha256: a8dca99562d58b374fd935c343c104b8eab63d8e80067bfaa9078e582f54a3df
   requires_dist:
   - fastapi
   - cadquery
