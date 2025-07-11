@@ -6,7 +6,6 @@ function App() {
   const [depth, setDepth] = useState(0);
   const [offset, setOffset] = useState(0);
   const [file, setFile] = useState<File | null>(null);
-  const [job, setJob] = useState<string | null>(null);
   const [downloadUrl, setDownloadUrl] = useState<string | null>(null);
   const [status, setStatus] = useState<string>("idle");
 
@@ -16,7 +15,6 @@ function App() {
 
   const submit = async () => {
     const res = await startTray({ depth, offset });
-    setJob(res.job_id);
     setStatus(res.status);
     const id = res.job_id;
     const interval = setInterval(async () => {
